@@ -1,0 +1,103 @@
+footer {
+    background-color: var(--black);
+    color: var(--white);
+    padding-top: 4.8rem;
+    padding-bottom: 5.5rem;
+    .first-area {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        .left {
+            flex: 1;
+            max-width: 60rem;
+            p {
+                color: #9C9C9C;
+                font-size: 1.5rem;
+                font-weight: 400;
+                line-height: 155.3%;
+                margin-top: 2.2rem;
+            }
+        }
+        .right {
+            flex: 1;
+            max-width: 27rem;
+            h3 {
+                opacity: 0.8;
+                color: var(--white);
+                font-size: 1.8rem;
+                font-weight: 700;
+                line-height: 155.3%;
+                letter-spacing: 1.62px;
+                text-transform: uppercase;
+                margin-bottom: 1.5rem;
+            }
+            ul {
+                display: flex;
+                justify-content: space-between;
+                li {
+                    a {
+                        color: #9C9C9C;
+                        font-size: 1.5rem;
+                        line-height: 155.3%;
+                        text-transform: uppercase;
+                        opacity: 0.8;
+                        transition: all .3s ease;
+                        &:hover {
+                            opacity: 1;
+                            color: var(--white);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .second-area {
+        border-top: 1px solid #282828;
+        margin-top: 4.1rem;
+        padding-top: 4.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        p {
+            color: #5C5C5C;
+            font-size: 1.5rem;
+            line-height: 155.3%;
+            letter-spacing: -1.05px;
+        }
+    }
+    @media(max-width: 991px) {
+        .first-area {
+            flex-direction: column;
+            align-items: center;
+            gap: 40px;
+            text-align: center;
+            .left {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .right {
+                ul {
+                    li {
+                        &:not(:last-child) {
+                            margin-right: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media(max-width: 560px) {
+        .first-area {
+            .left {
+                p {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+        .second-area {
+            flex-direction: column;
+            gap: 8px;
+        }
+    }
+}
