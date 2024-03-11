@@ -28,6 +28,11 @@ Nesse projeto foram utilizados as seguintes tecnologias:
 
 <p>O front-end foi desenvolvido pelo <a href="https://www.linkedin.com/in/willmoreira/">William Moreira</a></p>
 
+
+## Deploy
+
+<p>O deploy do projeto pode ser visualizado no link: <a href="https://figpro-beige.vercel.app/">Figpro</a></p>
+
 ## Contato
 
 <div> 
